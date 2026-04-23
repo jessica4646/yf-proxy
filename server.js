@@ -1,13 +1,2 @@
-{
-  "name": "yf-proxy",
-  "version": "1.0.0",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.18.2",
-    "node-cron": "^3.0.3",
-    "node-fetch": "^3.3.2"
-  }
-}
+const express = require("express");
+const cors = require("cors");

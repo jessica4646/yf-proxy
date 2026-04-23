@@ -1,12 +1,13 @@
-mkdir yf-proxy && cd yf-proxy
-npm init -y
-npm install express node-fetch cors
-json{
-  "type": "module"
+{
+  "name": "yf-proxy",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "node-cron": "^3.0.3",
+    "node-fetch": "^3.3.2"
+  }
 }
-const YF_PROXY  = "http://localhost:3001/api/chart/";
-const YF_QUOTE  = "http://localhost:3001/api/quote?symbols=";
-app.use(cors({
-  origin: process.env.ALLOWED_ORIGIN || "http://localhost:3000"
-}));
-const PORT = process.env.PORT || 3001;
